@@ -1,3 +1,5 @@
+import 'package:news_app_flutter/model/source.dart';
+
 class ArticleModel {
   final String author;
   final String title;
@@ -10,6 +12,7 @@ class ArticleModel {
   ArticleModel(this.author, this.title, this.description, this.url, this.img,
       this.date, this.content);
   ArticleModel.fromJson(Map<String, dynamic> json)
+      //  source=SourceModel.fromJson(json["source"]), 
       : author = json["author"],
         title = json["title"],
         description = json["description"],
